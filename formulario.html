@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato - Site de Receitas</title>
+    <link rel="stylesheet" href="css/estilo-formulario.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de Contato</h1>
+        <nav>
+            <ul class="dropdown">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <li><a href="tipicas.html">Receitas Típicas</a></li>
+                <li><a href="formulario.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Entre em Contato Conosco</h2>
+            <form id="contactForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Dúvida">Dúvida</option>
+                    <option value="Receita">Receita</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Contato: <a href="mailto:contato@receitas.com">contato@receitas.com</a>
+        </address>
+        <p>&copy; 2024 João Receitas</p>
+    </footer>
+
+    <script src="js/form.js"></script>
+</body>
+</html>
